@@ -1,6 +1,9 @@
+import Navbar from "../components/Navbar";
+
 function Cart() {
-  return(
+  return (
     <div>
+      <Navbar />
       Your Cart
     </div>
   );
