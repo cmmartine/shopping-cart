@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { store } from './app/store';
+import { Provider } from 'react-redux';
 import './index.css';
-import Home from './pages/Home';
-import Shop from './pages/Shop';
-import Cart from './pages/Cart';
+import Home from './app/pages/Home';
+import Shop from './app/pages/Shop';
+import Cart from './app/pages/Cart';
 
 const router = createBrowserRouter([
   {
@@ -22,5 +24,7 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+  <Provider store={store}>
+    <RouterProvider router={router} />
+  </Provider>
 );
