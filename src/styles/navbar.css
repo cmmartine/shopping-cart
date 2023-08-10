@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  background-color: rgb(19, 19, 19);
+  height: 40px;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 20%;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  height: 25px;
+  padding: 2px 5px;
+  margin: 0px 15px;
+}
+
+.nav-link:hover{
+  border: solid white 1.5px;
+  border-radius: 2px;
+}
