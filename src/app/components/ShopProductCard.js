@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { increment } from "../../features/productSlice";
 
-function ProductCard(props) {
+function ShopProductCard(props) {
 
   const {prodName, prodImg, prodDesc, prodCost, numInCart, id} = props.product;
 
@@ -29,4 +29,4 @@ function ProductCard(props) {
   );
 }
 
-export default ProductCard;
+export default ShopProductCard;

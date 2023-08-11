@@ -1,11 +1,10 @@
 import { useSelector } from "react-redux";
 import Navbar from "../components/Navbar";
-import ProductCard from "../components/ProductCard";
+import ShopProductCard from "../components/ShopProductCard";
 import '../styles/product-card.css';
 
 function Shop() {
   const allProducts = useSelector(state => state.products.allProducts)
-  console.log(allProducts);
 
   return (
     <div>
@@ -14,7 +13,7 @@ function Shop() {
       <div className='card-container'>
         {allProducts.map((product) => (
           <div key={product.id} className='card-outer'>
-            <ProductCard product={product} />
+            <ShopProductCard product={product} />
           </div>
         ))}
       </div>
