@@ -8,7 +8,7 @@ function ShopProductCard(props) {
   const dispatch = useDispatch();
 
   return(
-    <div className='card-inner'>
+    <div className='shop-card-inner'>
 
       <img src={prodImg} alt={prodName} />
 
@@ -20,9 +20,9 @@ function ShopProductCard(props) {
         <p className='prod-cost'>{prodCost}</p>
       </div>
 
-      <div className='cart-count-container'>
+      <div className='count-container'>
         <div>In cart: {numInCart}</div>
-        <button aria-label='increment' onClick={() => dispatch(increment(id))}>Add to Cart</button>
+        <button className='shop-add-button' aria-label='increment' onClick={() => dispatch(increment(id))}>Add to Cart</button>
       </div>
 
     </div>

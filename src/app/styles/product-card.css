@@ -1,23 +1,45 @@
 /* card-container and card-outer located in Shop.js */
-.card-container {
+.shop-card-container {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: center;
 }
 
-.card-outer {
+.shop-card-outer {
   display: flex;
   width: 400px;
   height: 350px;
-  border: 1px solid black;
+  background-color: white;
   margin: 8px;
   padding: 4px 8px;
 }
 
-.card-inner {
+.shop-card-inner {
   display: grid;
   grid-template-rows: 1fr .3fr .3fr;
+  width: 100%;
+}
+
+.cart-card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-card-outer {
+  display: flex;
+  width: 300px;
+  height: 150px;
+  background-color: white;
+  margin: 8px;
+  padding: 4px 8px;
+}
+
+.cart-card-inner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .prod-info-container {
@@ -37,13 +59,45 @@
   margin: 2px;
 }
 
+.count-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.count-buttons-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.shop-add-button {
+  width: 140px;
+  background-color: rgb(255, 213, 27);
+  border-color: rgb(255, 213, 27);
+  border-style: none;
+  padding: 8px;
+  border-radius: 14px;
+}
+
+.shop-add-button:hover, .cart-amount-button:hover {
+  background-color: rgb(255, 194, 27);
+  border-color: rgb(255, 194, 27);
+}
+
+.cart-amount-button {
+  font-weight: 550;
+  background-color: rgb(255, 213, 27);
+  border-color: rgb(255, 213, 27);
+  border-style: none;
+}
+
 @media (max-width: 480px) {
 
-  .card-container {
+  .shop-card-container {
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   }
 
-  .card-outer {
+  .shop-card-outer {
     width: 160px;
     height: 250px;
   }
