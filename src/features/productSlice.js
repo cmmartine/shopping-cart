@@ -19,7 +19,7 @@ export const productSlice = createSlice({
       console.log(action.payload);
       state.allProducts.map(product => {
         if (product.id === action.payload) {
-          product.numInCart += 1;
+          product.numInCart -= 1;
         }
       })
     },
