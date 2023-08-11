@@ -12,14 +12,16 @@ function ProductCard(props) {
 
       <img src={prodImg} alt={prodName} />
 
-      <h3 className='prod-name'>{prodName}</h3>
+      <div className='prod-info-container'>
+        <h3 className='prod-name'>{prodName}</h3>
 
-      <p className='prod-desc'>{prodDesc}</p>
+        <p className='prod-desc'>{prodDesc}</p>
 
-      <p className='prod-cost'>{prodCost}</p>
+        <p className='prod-cost'>{prodCost}</p>
+      </div>
 
       <div className='cart-count-container'>
-        
+        <div>In cart: {numInCart}</div>
         <button aria-label='increment' onClick={() => dispatch(increment(id))}>Add to Cart</button>
       </div>
 

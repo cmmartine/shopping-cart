@@ -1,0 +1,50 @@
+/* card-container and card-outer located in Shop.js */
+.card-container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-content: center;
+}
+
+.card-outer {
+  display: flex;
+  width: 400px;
+  height: 350px;
+  border: 1px solid black;
+  margin: 8px;
+  padding: 4px 8px;
+}
+
+.card-inner {
+  display: grid;
+  grid-template-rows: 1fr .3fr .3fr;
+}
+
+.prod-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.prod-name {
+  margin: 2px;
+}
+
+.prod-desc {
+  margin: 2px;
+}
+
+.prod-cost {
+  margin: 2px;
+}
+
+@media (max-width: 480px) {
+
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
+
+  .card-outer {
+    width: 160px;
+    height: 250px;
+  }
+}

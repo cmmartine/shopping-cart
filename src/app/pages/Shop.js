@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import Navbar from "../components/Navbar";
 import ProductCard from "../components/ProductCard";
+import '../styles/product-card.css';
 
 function Shop() {
   const allProducts = useSelector(state => state.products.allProducts)
