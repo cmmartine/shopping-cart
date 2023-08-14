@@ -9,7 +9,7 @@ export const productSlice = createSlice({
   reducers: {
     increment: (state, action) => {
       console.log(action.payload);
-      state.allProducts.map(product => {
+      state.allProducts.forEach(product => {
         if (product.id === action.payload) {
           product.numInCart += 1;
         }
@@ -17,7 +17,7 @@ export const productSlice = createSlice({
     },
     decrement: (state, action) => {
       console.log(action.payload);
-      state.allProducts.map(product => {
+      state.allProducts.forEach(product => {
         if (product.id === action.payload) {
           product.numInCart -= 1;
         }
