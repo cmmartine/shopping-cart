@@ -19,7 +19,7 @@ function CartProductCard(props) {
       </div>
       
       <div className='count-container'>
-        <div>Quantity: {numInCart}</div>
+        <div className='cart-quantity'>Quantity: {numInCart}</div>
         <div className='count-buttons-container'>
           <button className='cart-amount-button' aria-label='decrement' onClick={() => dispatch(decrement(id))}>-</button>
           <button className='cart-amount-button' aria-label='increment' onClick={() => dispatch(increment(id))}>+</button>

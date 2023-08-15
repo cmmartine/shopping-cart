@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shop Product Card renders correctly 1`] = `
+<div
+  className="shop-card-inner"
+>
+  <img
+    alt="Shoes"
+    src="Some image"
+  />
+  <div
+    className="prod-info-container"
+  >
+    <h3
+      className="prod-name"
+    >
+      Shoes
+    </h3>
+    <p
+      className="prod-desc"
+    >
+      Very good
+    </p>
+    <p
+      className="prod-cost"
+    >
+      $49.99
+    </p>
+  </div>
+  <div
+    className="count-container"
+  >
+    <div>
+      In cart: 
+      0
+    </div>
+    <button
+      aria-label="increment"
+      className="shop-add-button"
+      onClick={[Function]}
+    >
+      Add to Cart
+    </button>
+  </div>
+</div>
+`;
